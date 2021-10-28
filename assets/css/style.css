@@ -128,7 +128,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 
 
 /*.menu-ui-design*/
-.menu-ui-design{overflow-y:scroll;height: 350px;}
+.menu-ui-design{overflow-y:scroll;height: 250px;}
 .menu-ui-design::-webkit-scrollbar {
     width:5px;
 }
@@ -147,13 +147,33 @@ nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
     border: 1px solid #d92cf9;
-    padding: 10px;
+    padding: 6px;
     top: 0;
 }
 nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*.navbar-toggle */
 
+.navbar-header button div{
+    height: 2px;
+    width: 10px;
+    margin: 2px 0;
+    background-color: #d92cf9;
+    transition: 0.6s;
+}
 
+
+
+.toggle .line .one{
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+
+.toggle .line .two{
+    opacity: 0;
+}
+
+.toggle .line .three{
+    transform: rotate(45deg) translate(-5px,-5px);
+}
 
 /*-------------------------------------
         3.  Welcome-hero
@@ -395,11 +415,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         8. Profiles
 --------------------------------------*/
 .profiles {
-    padding:  50px 0 100px;
+    padding:  50px 0 50px;
     border:  1px solid #e5ebf2;
 }
 
-.profiles-content {padding-top: 100px;}
+/* .profiles-content {padding-top: 100px;} */
 .profiles-content .col-sm-3{padding:0;}
 .profile-txt {
     display: flex;
